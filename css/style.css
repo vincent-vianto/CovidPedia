@@ -47,7 +47,7 @@ body {
   padding: 12px;
 }
 
-.jumbotron {
+.jumbotron .bg-custom {
   background-color: transparent;
   padding: 100px;
 }
