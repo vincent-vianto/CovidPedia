@@ -1,3 +1,5 @@
+/* kalau ada masalah tambahin class aj. klw tambah class, dy bakal detect kok */
+
 html {
   scroll-behavior: smooth;
 }
@@ -5,63 +7,52 @@ html {
 body {
   margin: 0;
   padding: 0;
-  margin-top: 70px;
+  font-family: Helvetica, Arial, sans-serif;
 }
+
 .header {
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 50px;
 }
 
-.primary {
-  background-image: linear-gradient(
-    #eb3530,
-    #cf3538,
-    #b03541,
-    #8e344b,
-    #7b3451,
-    #50335e,
-    #3d3363,
-    #333366
-  );
-  height: 3000px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+.header-sm{
+  display : none
 }
 
+.card {
+  margin: 0 auto;
+  padding: 40px;
+  flex: auto;
+  display: block;
+  text-align: center;
+}
+
+.contact,
 .about {
-  background-color: #d11c2f;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 80px;
 }
 
-.contact {
-  background-color: #d11c2f;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+.navbar-brand {
+  font-family: "Kievit";
+  font-size: 24px;
 }
 
 .topnav {
   background-color: #333366;
   font-family: "Kievit";
   text-align: center;
-  font-size: 17px;
-  padding: 12px;
+  font-size: 18px;
 }
 
 .bg-custom {
-  background-color: transparent;
-  padding: 100px;
-}
-
-.pads {
-  padding-left: 100px;
-  padding-right: 100px;
-  color: black;
-  text-align: center;
+  background-color: rgba(195, 161, 224, 0.548);
+  height: min-content;
 }
 
 .img-read {
   width: 75%;
 }
+
 .secondary h1 {
   color: rgba(71, 13, 13, 0.815);
   text-shadow: 0px 7.5px 0.05px #dc4848;
@@ -71,10 +62,6 @@ body {
 
 .col-6 {
   font-size: auto;
-}
-
-.marg {
-  margin-top: 100px;
 }
 
 .col-xl-3 {
@@ -100,10 +87,9 @@ body {
 }
 
 .box-purple {
-  background-color: #642b75;
+  background-color: #cccccc;
   background-size: cover;
   padding: 20px;
-  color: white;
   width: fit-content;
   height: fit-content;
   margin-top: 15%;
@@ -123,30 +109,55 @@ body {
   resize: none;
 }
 
-.indonesia {
-  color: rgb(255, 254, 254);
-}
 
 .berterimakasih {
-  color: yellow;
+  color: rgb(255, 0, 0);
 }
 
-.dot {
-  color: white;
-  display: inline;
+.stayhome {
+  color: rgb(255, 0, 0);
 }
 
-.stayhome { 
-  color: yellow;
-}
-
-.d-md-block{
+.d-md-block {
   background-color: rgba(0, 0, 0, 0.788);
-  padding: 40px;
   color: white;
   text-align: center;
 }
 
-.carousel-item img{
+.carousel-item img {
   height: 500px;
+}
+
+@media (max-width: 576px) {
+  .header-md{
+    display: none;
+  }
+
+  .header-sm{
+    display: block;
+    margin-bottom: 17px;
+  }
+
+  .carousel-item img {
+    height: 250px;
+  }
+
+  .d-md-block {
+    height: 175px;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    text-align: center;
+  }
+
+  .d-md-block h5 {
+    font-size: xx-small;
+  }
+
+  .d-md-block p {
+    font-size: xx-small;
+  }
+
+  .d-md-block a {
+    font-size: xx-small;
+  }
 }
