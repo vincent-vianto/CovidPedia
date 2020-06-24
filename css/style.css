@@ -1,5 +1,3 @@
-/* kalau ada masalah tambahin class aj. klw tambah class, dy bakal detect kok */
-
 html {
   scroll-behavior: smooth;
 }
@@ -15,8 +13,8 @@ body {
   font-size: 50px;
 }
 
-.header-sm{
-  display : none
+.header-sm {
+  display: none
 }
 
 .card {
@@ -25,11 +23,6 @@ body {
   flex: auto;
   display: block;
   text-align: center;
-}
-
-.contact,
-.about {
-  margin-top: 80px;
 }
 
 .navbar-brand {
@@ -60,18 +53,6 @@ body {
   margin-top: auto;
 }
 
-.col-6 {
-  font-size: auto;
-}
-
-.col-xl-3 {
-  font-size: 15pt;
-}
-
-.row {
-  margin-top: 25px;
-}
-
 .kartu {
   color: red;
   font-weight: bold;
@@ -86,7 +67,27 @@ body {
   color: black;
 }
 
-.box-purple {
+.box-content {
+  background-size: cover;
+  padding: 20px;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 8%;
+  width: 100%;
+}
+
+.box-content img {
+  width: 100%;
+}
+
+.content-list-img{
+  width: 150px!important;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.box-contact {
   background-color: #cccccc;
   background-size: cover;
   padding: 20px;
@@ -109,6 +110,9 @@ body {
   resize: none;
 }
 
+#virus-img {
+  width: 100%;
+}
 
 .berterimakasih {
   color: rgb(255, 0, 0);
@@ -126,20 +130,37 @@ body {
 
 .carousel-item img {
   height: 500px;
+  object-fit: cover;
+}
+
+#info-covid {
+  margin-top: 150px;
 }
 
 @media (max-width: 576px) {
-  .header-md{
+  .header-md {
     display: none;
   }
 
-  .header-sm{
+  .header-sm {
     display: block;
     margin-bottom: 17px;
   }
 
+  .content-list-img{
+    width: 90px!important;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  #info-covid {
+    margin-top: 20px;
+  }
+
   .carousel-item img {
     height: 250px;
+    object-fit: cover;
   }
 
   .d-md-block {
