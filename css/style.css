@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
 }
 
 .header {
@@ -20,8 +21,6 @@ body {
 .card {
   margin: 0 auto;
   padding: 40px;
-  flex: auto;
-  display: block;
   text-align: center;
 }
 
@@ -30,11 +29,25 @@ body {
   font-size: 24px;
 }
 
+.navbar-brand img {
+  height: 30px;
+}
+
 .topnav {
   background-color: #333366;
   font-family: "Kievit";
   text-align: center;
   font-size: 18px;
+}
+
+.nav-item {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-item:hover {
+  background-color: #f72664;
+  border-radius: 20px;
+  padding: 0 6px;
 }
 
 .bg-custom {
@@ -80,21 +93,25 @@ body {
   width: 100%;
 }
 
-.content-list-img{
-  width: 150px!important;
+.content-list-img {
+  width: 150px !important;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
 }
 
+.content-sm {
+  display: none;
+}
+
 .box-contact {
-  background-color: #cccccc;
   background-size: cover;
   padding: 20px;
   width: fit-content;
   height: fit-content;
-  margin-top: 15%;
+  margin-top: 8%;
   width: 100%;
+  background-color: #cccccc;
 }
 
 #content {
@@ -102,7 +119,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  top: 20px;
+  top: 55px;
   overflow: hidden;
 }
 
@@ -137,21 +154,81 @@ body {
   margin-top: 150px;
 }
 
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 330px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 330px;
+  width: 100%;
+}
+
+footer {
+  background-color: #333366;
+  color: #ffffff;
+  padding: 60px;
+  margin-top: 100px;
+  width: 100%;
+}
+
+hr .border {
+  width: 75%;
+}
+
+hr .socket {
+  border-top: 2px solid #d5d5d5;
+  padding: 20px;
+}
+
+
+@media(max-width : 1024px) {
+  .content-list-img {
+    width: 125px !important;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+@media(max-width : 769px) {
+  .content-list-img {
+    width: 100px !important;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 576px) {
+  .box-content img {
+    width: 100%;
+  }
+
   .header-md {
     display: none;
   }
+
+  .nav-item:hover {
+    background-color: transparent
+  }
+
 
   .header-sm {
     display: block;
     margin-bottom: 17px;
   }
 
-  .content-list-img{
-    width: 90px!important;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
+  .content-md {
+    display: none;
+  }
+
+  .content-sm {
+    display: block;
   }
 
   #info-covid {
