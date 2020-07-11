@@ -271,6 +271,10 @@ hr .border {
     display: block;
   }
 
+  .box-content {
+    margin-top: 30%;
+  }
+
   #info-covid {
     margin-top: 20px;
   }
