@@ -36,7 +36,7 @@ function showPage() {
 }
 
 $(document).ready(function() {
-    $('[data-toggle="collapse"]').click(function() {
+    $('[aria-label="Read More"]').click(function() {
       $(this).toggleClass( "active" );
       if ($(this).hasClass("active")) {
         $(this).text("Hide");
