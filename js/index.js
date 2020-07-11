@@ -1,3 +1,4 @@
+
 if (typeof document.onselectstart != "undefined") {
     document.onselectstart = new Function("return false");
 } else {
@@ -22,4 +23,16 @@ document.onkeydown = function (e) {
         return false;
     }
 }
+
+let myVar;
+
+function loading() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("unloader").style.display = "block";
+}
+
 new WOW().init();

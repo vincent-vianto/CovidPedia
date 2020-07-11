@@ -1,12 +1,40 @@
 html {
   scroll-behavior: smooth;
+  top: 0;
+  left: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Merriweather', serif;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #f72664;
+  border-bottom: 16px solid #f72664;;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#unloader {
+  display: none;
 }
 
 .header {
@@ -64,6 +92,10 @@ body {
   text-shadow: 0px 7.5px 0.05px #dc4848;
   text-align: center;
   margin-top: auto;
+}
+
+.text-vincent{
+  font-size: 14.9px;
 }
 
 .kartu {
@@ -151,7 +183,7 @@ body {
 }
 
 #info-covid {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .mapouter {
@@ -171,18 +203,12 @@ body {
 footer {
   background-color: #333366;
   color: #ffffff;
-  padding: 60px;
-  margin-top: 100px;
+  padding: 40px 50px; 
   width: 100%;
 }
 
 hr .border {
   width: 75%;
-}
-
-hr .socket {
-  border-top: 2px solid #d5d5d5;
-  padding: 20px;
 }
 
 
@@ -258,4 +284,14 @@ hr .socket {
   .d-md-block a {
     font-size: xx-small;
   }
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

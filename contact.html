@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
@@ -11,15 +11,18 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="//db.onlinewebfonts.com/c/fd732bd7de8c4c02d9250cc4adffd9de?family=Kievit" rel="stylesheet"
         type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="./css/animate.css" />
 
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Covidpedia - Contact</title>
 </head>
 
-<body oncontextmenu="return false;">
+<body oncontextmenu="return false;" onload="loading()">
     <nav class="navbar sticky-top navbar-expand-md navbar-dark topnav ">
         <a class="navbar-brand" href="index.html">
             <img src="img/virus.svg">
@@ -48,51 +51,89 @@
             </ul>
         </div>
     </nav>
-
     ​​​​​
-    <div class="container wow fadeIn" data-wow-delay="0.5s">
-        <h1><b>Get in touch</b> </h1><br>
-        <p>
-            Kami percaya bahwa Covidpedia masih jauh dari kata sempurna, jadi tim kami akan
-            sangat menerima feedback atau komentar anda agar website ini dapat terus berkembang.
-        </p>
-    </div>
+    <div id="loader"></div>
+    <div id="unloader">
+        <div class="container wow fadeIn" data-wow-delay="0.5s">
+            <h1><b>Get in Touch</b> </h1><br>
+            <p>
+                Kami percaya bahwa Covidpedia masih jauh dari kata sempurna, jadi tim kami akan
+                sangat menerima feedback atau komentar anda agar website ini dapat terus berkembang.
+            </p>
+        </div>
 
-    <div class="box-contact wow fadeIn" data-wow-delay="0.8s">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <h1>Alamat</h1>
-                    <h2>Batam</h2>
-                    <p>Sei Ladi, Jl. Gajah Mada, Baloi Permai,</p>
-                    <p>Kec.Sekupang, Kota Batam, Kepulauan Riau 29442</p>
-                    <p>Email : covidpedia@gmail.com</p>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="1.3s">
-                    <div class="mapouter">
-                        <div class="gmap_canvas"><iframe width="100%" height="330" id="gmap_canvas"
-                                src="https://maps.google.com/maps?q=universitas%20internasonal%20batam&t=k&z=15&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                            </iframe>
-                            <a href="https://2torrentz.net"></a>
+        <div class="box-contact wow fadeIn" data-wow-delay="0.8s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <h1>Alamat</h1>
+                        <h2>Batam</h2>
+                        <p>Sei Ladi, Jl. Gajah Mada, Baloi Permai,</p>
+                        <p>Kec.Sekupang, Kota Batam, Kepulauan Riau 29442</p>
+                        <p>Email : covidpedia@gmail.com</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="1.3s">
+                        <div class="mapouter">
+                            <div class="gmap_canvas"><iframe width="100%" height="330" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=universitas%20internasonal%20batam&t=k&z=15&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                </iframe>
+                                <a href="https://2torrentz.net"></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <h1>Komentar</h1>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nama">
-                        </div>
-                        <div class="form-group">
-                            <textarea type="text" class="form-control comment" rows="6" placeholder="komentar"
-                                rows=6></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                    </form>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <h1>Komentar</h1>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Nama">
+                            </div>
+                            <div class="form-group">
+                                <textarea type="text" class="form-control comment" rows="6" placeholder="komentar"
+                                    rows=6></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <footer>
+            <div class="container">
+                <div class="content-md">
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <h5>Infrisanti</h5>
+                            <hr class="border">
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5>Jason</h5>
+                            <hr class="border">
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5>Alvi</h5>
+                            <hr class="border">
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5>Vincent</h5>
+                            <hr class="border">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="text-center">&copy; Copyright by Us</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-sm">
+                    <h5 class="text-center">Infri-Jason-Alvi-Vincent</h5>
+                    <hr class="border">
+                    <h5 class="text-center">&copy; Copyright by Us</h5>
+                </div>
+            </div>
+        </footer>
     </div>
 
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
@@ -11,15 +11,18 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="//db.onlinewebfonts.com/c/fd732bd7de8c4c02d9250cc4adffd9de?family=Kievit" rel="stylesheet"
         type="text/css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="./css/animate.css" />
 
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Covidpedia - About</title>
 </head>
 
-<body oncontextmenu="return false;">
+<body oncontextmenu="return false;" onload="loading()">
 
     <nav class="navbar sticky-top navbar-expand-md navbar-dark topnav ">
         <a class="navbar-brand" href="index.html">
@@ -50,68 +53,108 @@
         </div>
     </nav>
 
-    <div class="container mt-5 wow fadeIn" data-wow-delay="0.3s">
-        <h1 class="text-center mb-5"><b>About Us</b> </h1>
-        <p>
-            The website was created for the purpose of a university project at Universitas
-            International Batam in 2020. Many thanks to our members that have been working
-            together all the way to the end :
-        </p>
-        <div class="card-group justify-content-center">
-            <div class="row mb-3">
-                <div class="col-sm-6 mb-2 col-lg-3 wow rotateIn" data-wow-delay="1s">
-                    <div class="card shadow">
-                        <dix class="text-center">
-                            Web Designer
-                        </dix>
-                        <img class="card-img" src="img/female.png">
-                        <div class="card-foot text-center">
-                            <div class="card-title"> Infrisanti Wilson Tong</div>
+    <div id="loader"></div>
+    <div id="unloader">
+        <div class="container mt-5 mb-5 wow fadeIn" data-wow-delay="0.3s">
+            <h1 class="text-center mb-3"><b>About Us</b> </h1>
+            <p>
+                The website was created for the purpose of a university project at Universitas
+                International Batam in 2020. Many thanks to our members that have been working
+                together all the way to the end :
+            </p>
+            <div class="card-group justify-content-center">
+                <div class="row mb-3">
+                    <div class="col-sm-6 mb-2 col-lg-3 wow rotateIn" data-wow-delay="1s">
+                        <div class="card shadow">
+                            <dix class="text-center">
+                                Web Designer
+                            </dix>
+                            <img class="card-img" src="img/female.png">
+                            <div class="card-foot text-center">
+                                <div class="card-title"> Infrisanti Wilson Tong</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 mb-2 col-lg-3 wow rotateIn" data-wow-delay="1.5s">
-                    <div class="card shadow">
-                        <dix class="text-center">
-                            Web Content Writer
-                        </dix>
-                        <img class="card-img" src="img/male.png">
-                        <div class="card-foot text-center">
-                            <div class="card-title"> Jason Aaron Louis</div>
+                    <div class="col-sm-6 mb-2 col-lg-3 wow rotateIn" data-wow-delay="1.5s">
+                        <div class="card shadow">
+                            <dix class="text-center">
+                                Web Content Writer
+                            </dix>
+                            <img class="card-img" src="img/male.png">
+                            <div class="card-foot text-center">
+                                <div class="card-title"> Jason Aaron Louis</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 mb-2 col-lg-3 wow rotateIn" data-wow-delay="2s">
-                    <div class="card shadow">
-                        <dix class="text-center">
-                            Web Programmer
-                        </dix>
-                        <img class="card-img" src="img/female.png">
-                        <div class="card-foot text-center">
-                            <div class="card-title"> Alvi Geovanny</div>
+                    <div class="col-sm-6 mb-2 col-lg-3 wow rotateIn" data-wow-delay="2s">
+                        <div class="card shadow">
+                            <dix class="text-center">
+                                Web Programmer
+                            </dix>
+                            <img class="card-img" src="img/female.png">
+                            <div class="card-foot text-center">
+                                <div class="card-title"> Alvi Geovanny</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 mb-2 col-lg-3 wow rotateIn" data-wow-delay="2.5s">
-                    <div class="card shadow">
-                        <dix class="text-center">
-                            Web Programmer
-                        </dix>
-                        <img class="card-img" src="img/male.png">
-                        <div class="card-foot text-center">
-                            <div class="card-title"> Vincent Octarian Vianto</div>
+                    <div class="col-sm-6 mb-2 col-lg-3 wow rotateIn" data-wow-delay="2.5s">
+                        <div class="card shadow">
+                            <dix class="text-center">
+                                Web Programmer
+                            </dix>
+                            <img class="card-img" src="img/male.png">
+                            <div class="card-foot text-center">
+                                <div class="card-title text-vincent"> Vincent Octarian Vianto</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <p>
+                We provide some advices on how to check the symptoms and prevent the spread based on scientific
+                research.
+            </p>
+            <br>
+            Best Regards,
+            <br><br><br>
+            Covidpedia Team
         </div>
-        <p>
-            We provide some advices on how to check the symptoms and prevent the spread based on scientific research.
-        </p>
-        <br>
-        Best Regards,
-        <br><br><br>
-        Covidpedia Team
+
+        <footer>
+            <div class="container">
+                <div class="content-md">
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <h5>Infrisanti</h5>
+                            <hr class="border">
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5>Jason</h5>
+                            <hr class="border">
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5>Alvi</h5>
+                            <hr class="border">
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5>Vincent</h5>
+                            <hr class="border">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="text-center">&copy; Copyright by Us</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-sm">
+                    <h5 class="text-center">Infri-Jason-Alvi-Vincent</h5>
+                    <hr class="border">
+                    <h5 class="text-center">&copy; Copyright by Us</h5>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
