@@ -1,3 +1,11 @@
+@import url(//db.onlinewebfonts.com/c/fd732bd7de8c4c02d9250cc4adffd9de?family=Kievit);
+
+@font-face {
+  font-family: "Kievit";
+  src: url("//db.onlinewebfonts.com/t/fd732bd7de8c4c02d9250cc4adffd9de.eot");
+  src: url("//db.onlinewebfonts.com/t/fd732bd7de8c4c02d9250cc4adffd9de.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fd732bd7de8c4c02d9250cc4adffd9de.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fd732bd7de8c4c02d9250cc4adffd9de.woff") format("woff"), url("//db.onlinewebfonts.com/t/fd732bd7de8c4c02d9250cc4adffd9de.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fd732bd7de8c4c02d9250cc4adffd9de.svg#Kievit") format("svg");
+}
+
 html {
   scroll-behavior: smooth;
   top: 0;
@@ -11,7 +19,12 @@ body {
   height: 100%;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Merriweather', serif;
 }
 
@@ -26,7 +39,8 @@ h1,h2,h3,h4,h5,h6{
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #f72664;
-  border-bottom: 16px solid #f72664;;
+  border-bottom: 16px solid #f72664;
+  ;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
@@ -94,7 +108,7 @@ h1,h2,h3,h4,h5,h6{
   margin-top: auto;
 }
 
-.text-vincent{
+.text-vincent {
   font-size: 14.9px;
 }
 
@@ -203,7 +217,7 @@ h1,h2,h3,h4,h5,h6{
 footer {
   background-color: #333366;
   color: #ffffff;
-  padding: 40px 50px; 
+  padding: 40px 50px;
   width: 100%;
 }
 
@@ -287,11 +301,21 @@ hr .border {
 }
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
